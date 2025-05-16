@@ -1,6 +1,6 @@
 {
   "name": "my-digital-portfolio",
-  "homepage": "https://jensenah.github.io/digital-portfolio",
+  "homepage": "https://jensenah.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build && touch dist/.nojekyll",
+    "deploy": "gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.5",
