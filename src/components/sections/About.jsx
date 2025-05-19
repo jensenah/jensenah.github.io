@@ -1,8 +1,8 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-    const frontendSkills = ["React", "Vue", "TypeScript", "TailwindCSS"];
-    const backendSkills = ["NodeJS", "Python", "AWS", "MongoDB"];
+    const frontendSkills = ["React", "CSS", "TypeScript", "TailwindCSS"];
+    const backendSkills = ["NodeJS", "PHP", "MySQL", "MongoDB"];
     return (
       <section
         id="about"
@@ -13,10 +13,9 @@ export const About = () => {
             <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#C47335] to-[#E4E3D3] bg-clip-text text-transparent text-center">
               About Me
             </h2>
-            <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all">
+            <div className="rounded-xl p-8 border border-[#E4E3D3]/50 hover:-translate-y-1 transition-all">
               <p className="text-[#E4E3D3] mb-6">
-                Passionate developer with expertise in building scalable web
-                applications and creating innovative solutions.
+                Versatile full-stack web developer with two years of experience designing and building responsive, cross-platform web applications using a broad range of technologies and programming languages
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -28,7 +27,7 @@ export const About = () => {
                     {frontendSkills.map((tech, key) => (
                       <span
                         key={key}
-                        className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                        className="bg-[#510D0A] text-[#E4E3D3] py-1 px-3 rounded-full text-sm hover:bg-[#E4E3D3] hover:text-[#510D0A] hover:shadow-[0_2px_8px_rgba(100,8,20,0.2)] transition"
                       >
                         {tech}
                       </span>
@@ -44,7 +43,7 @@ export const About = () => {
                     {backendSkills.map((tech, key) => (
                       <span
                         key={key}
-                        className="bg-[#510D0A] text-[#E4E3D3] py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(100,8,20,0.2)] transition"
+                        className="bg-[#510D0A] text-[#E4E3D3] py-1 px-3 rounded-full text-sm hover:bg-[#E4E3D3] hover:text-[#510D0A] hover:shadow-[0_2px_8px_rgba(100,8,20,0.2)] transition"
                       >
                         {tech}
                       </span>
@@ -53,21 +52,25 @@ export const About = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-8">
+              <div className="p-6 rounded-xl border-[#E4E3D3]/50 border hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Education</h3>
-                <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <ul className="list-disc list-inside text-[#E4E3D3] space-y-2">
                   <li>
-                    <strong>B.S in Computer Science</strong> -XYZ University
-                    (2016-2020)
+                    <strong>Millennium High School</strong> - 2021-2025 <br /> - Relevant Coursework: AP Language and Composition, AP Literature, AP Precalculus, Graphic Design 1 & 2 <br /> - GPA: 4.0/4.7
                   </li>
+                  {/* <li>
+                    Relevant Coursework: AP Language and Composition, AP Literature, AP Precalculus, Graphic Design 1 & 2 <br /> GPA: 4.0/4.7
+                  </li> */}
                   <li>
-                    Relevant Coursework: Data Structures, Web Development, Cloud
-                    Computing...
+                    <strong>West-MEC Coding</strong> - 2023-2025 <br /> - 900-hour hands-on technical training in modern programming and web development building front-end, server-side and full-stack applications
                   </li>
+                  {/* <li>
+                    900-hour hands-on technical training in modern programming and web development building front-end, server-side and full-stack applications
+                  </li> */}
                 </ul>
               </div>
-              <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+              {/* <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Work Experience</h3>
                 <div className="space-y-4 text-gray-300">
                   <div>
@@ -89,7 +92,7 @@ export const About = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </RevealOnScroll>

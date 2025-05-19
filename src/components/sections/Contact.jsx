@@ -34,7 +34,7 @@ export const Contact = () => {
                   name="name"
                   required
                   value={formData.name}
-                  className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-[#E4E3D3] transition focus:outline-none focus:border-[#6BBAEC] focus:bg-blue-500/5 "
+                  className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-[#E4E3D3] transition focus:outline-none focus:border-[#E4E3D3] focus:bg-[#E4E3D3]/5"
                   placeholder="Name..."
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -48,7 +48,7 @@ export const Contact = () => {
                   name="email"
                   required
                   value={formData.email}
-                  className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-[#E4E3D3] transition focus:outline-none focus:border-[#6BBAEC] focus:bg-blue-500/5 "
+                  className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-[#E4E3D3] transition focus:outline-none focus:border-[#E4E3D3] focus:bg-[#E4E3D3]/5 "
                   placeholder="example@gmail.com"
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
@@ -62,7 +62,7 @@ export const Contact = () => {
                   required
                   rows={5}
                   value={formData.message}
-                  className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-[#E4E3D3] transition focus:outline-none focus:border-[#6BBAEC] focus:bg-blue-500/5 "
+                  className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-[#E4E3D3] transition focus:outline-none focus:border-[#E4E3D3] focus:bg-[#E4E3D3]/5 "
                   placeholder="Your Message..."
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
@@ -71,7 +71,7 @@ export const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#510D0A] text-[#E4E3D3] py-3 px-6 rounded font-meduim transition relateive overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                className="w-full bg-[#510D0A] text-[#E4E3D3] py-3 px-6 rounded font-meduim transition relateive overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(228,227,211,0.4)]"
               >
                 Send Message
               </button>
