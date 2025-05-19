@@ -13,7 +13,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               className="font-mono text-xl font-bold text-[#E4E3D3]"
             >
               {" "}
-              jensen<span className="text-[#6BBAEC]">.tech</span>
+              jensenah
             </a>
             <div
               className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
